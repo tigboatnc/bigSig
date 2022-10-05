@@ -29,6 +29,11 @@ Manually adding AWGN noise to PlutoSDR signals in python as a substitute for a r
 
 #### Outputs `run 1 : small poc with 190 training sample and 10 test samples`
 ![op1](./assets/m1_op1.png)
+![op2](./assets/m1_op2.png)
+![op3](./assets/m1_op3.png)
+![op4](./assets/m1_op4.png)
+
+
 
 
 

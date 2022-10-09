@@ -5,8 +5,8 @@ import time
 from tqdm import tqdm 
 
 
-sample_rate = 40e6 # Hz.  This is the “Fs” we always talk about
-center_freq = 433e6 # Hz.  Aka Carrier Frequency
+sample_rate = 20e5 # Hz.  This is the “Fs” we always talk about
+center_freq = 410e6 # Hz.  Aka Carrier Frequency
 num_samps = 160000 # samples returned per call to rx()
 gain = 70.0
 
@@ -21,7 +21,7 @@ sdr.rx_buffer_size = num_samps
 
 # BIG_PICTURE = np.zeros((400,400))
 
-for i in tqdm(range(200)):
+for i in tqdm(range(20000)):
     samples = sdr.rx()
-    with open(f'dataset/{int(gain)}_{i}.npy', 'wb') as f:
+    with open(f'dataset/100722_70_hone_wifi/{int(gain)}_{i}.npy', 'wb') as f:
         np.save(f, samples)

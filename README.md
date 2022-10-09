@@ -20,7 +20,10 @@ num_samps = 40000
 
 ## Trials and Tribulations 
 
-### method 1 - Manual AWGN Noise Imputation -> Convoltion Denoising AutoEncoder
+
+### experiment 1 - Denoising using Convolution AutoEncoder 
+> Manual AWGN Noise Imputation 
+
 Manually adding AWGN noise to PlutoSDR signals in python as a substitute for a real world noisy signal 
 - [Reference for Noise Addition](https://pysdr.org/content/noise.html)<br/>
 - Data collected with 70 gain. 
@@ -33,6 +36,8 @@ Manually adding AWGN noise to PlutoSDR signals in python as a substitute for a r
 ![op3](./assets/m1_op3.png)
 ![op4](./assets/m1_op4.png)
 
+### experiment 2 - AMR (Automatic Modulation Recognization) using CNNs 
+
 
 
 
@@ -42,3 +47,8 @@ Idk yet but
 - the model output does make the difference between the floor and signal more apparent 
 - the model sometimes tries to create signals on the right (bias due to training as samples similar looking)
 - [ ] Try on totally random signals on which no training done (maybe different encoing even)
+
+
+#### Some Nice References 
+- [Force Sharpening Component](https://medium.com/mlearning-ai/image-deblurring-using-convolutional-autoencoders-deep-learning-project-tutorial-329f87a4c6ad)
+- [AMR Reference 1 (2019)](https://erichizdepski.wordpress.com/2019/05/23/using-machine-learning-to-categorize-radio-signals/) 
